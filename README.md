@@ -18,7 +18,7 @@ We use this test to get a sense of your coding style and to how you creatively s
 
 To work on the project:
 
-- You will need the latest version of Android Studio and the v23 Android Build Tools.
+- Ensure you have the latest version of Android Studio and the v23 Android Build Tools.
 
 - Fork and clone the repo.
 
