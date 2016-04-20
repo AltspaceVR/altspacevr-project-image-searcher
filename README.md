@@ -19,21 +19,25 @@ We use this test to get a sense of your coding style and to how you creatively s
 To work on the project:
 
 - You will need the latest version of Android Studio and the v23 Android Build Tools.
+
 - Fork and clone the repo.
+
 - Open up the project with Android Studio. You can build the project via Gradle.
 
 # Part 1
 
-If you’ve tried AltspaceVR on Android, you'll have noticed that we have a large number of scrollable views that draw images of the spaces and events you can visit. In this app, you'll apply similar techniques in order to let users search and browse images and also save the ones they like.
+If you’ve tried AltspaceVR on Android, you'll have noticed that we have a number of scrollable views that show preview images of the spaces and events you can visit. In this app, you'll apply similar techniques in order to let users search and browse images and save the ones they like.
 
-The example project should provide a good foundation for the app. The places in the code you need to implement are commented `YOUR CODE HERE`. Also, there is a small example unit test in place, feel free to add additional tests as needed.
+The example project should provide a good foundation for the app. The places in the code you need to implement are commented `YOUR CODE HERE`. Also, there is a small example unit test in place, feel free to add additional tests as needed. For your reference, we've also included a sample completed `ImageSearcher.APK` in the Project directory that demonstrates what you should have working after finishing Part 1.
 
 ## Part 1a
 
 For Part 1a, you will need to implement the necessary functionality to fetch images info from the API, hand it off to the PhotosFragment, generate the image for rendering, and implement the adapter for the RecyclerView. The methods you'll need to implement are:
 
 * `ApiService.getDefaultPhotos` and `ApiService.searchPhotos` - These methods should call the relevant Pixabay APIs to fetch and search for images, and post the results to the EventBus. We've provided a Retrofit service you can use, or you can use your HTTP library of choice.
-* `PhotosFragment.onEvent` (both versions) - These methods should receive the events on the event bus, update the fragment properly, and notify the list that the data has changed.
+
+* `PhotosFragment.onEvent` (both overloads) - These methods should receive the events on the event bus, update the fragment properly, and notify the list that the data has changed.
+
 * `ItemsListAdapter.onBindViewHolder` - This method should do the typical RecyclerView lifecycle event and fill in the ViewHolder properly so the images will be drawn in the list.
 
 By the end of this part, you should have photos drawing in the list, they should be scrollable and load as you scroll, and you should be able to run a search against the API and see the results.
@@ -43,26 +47,22 @@ By the end of this part, you should have photos drawing in the list, they should
 For Part 1b, you will implement the "Save" functionality. For this part:
 
 * Implement the CRUD operations in `DatabaseUtil` so photo information can be queried, saved, and loaded from a local db.
+
 * Update `ItemListAdapter.onBindViewHolder` to have the proper `ClickListener` attached when the user clicks the `saveText` label on the `ViewHolder`. When clicked, this label should toggle between the photo being saved in the user's local db or deleted.
 
 # Part 2 - Enhancements
 
-TODO
-Now that you have a working cursor, and can point at and select objects, now build some functionality that might be fun in VR that showcases your skills and creativity. This is the open ended part of the project, and is your chance to blow us away! 
+Now that you have a working app for browsing + saving images, build some functionality that might be fun that showcases your skills and creativity. This is the open-ended part of the project, and is your chance to blow us away!
 
 Some potential ideas:
 
-- Use the cursor to manipulate objects, and add multiplayer!
+- Add multiple tabs so you can easily browse your saved images.
 
-- Improve the cursor to be more usable.
+- Add the ability to save searches.
 
-- Add some custom shaders, behaviors, or effects to objects to show off your graphics chops.
+- Add some type of photo editing and sharing tools.
 
-- Add a control scheme or widgets that let the user do stuff with objects.
-
-- Create some kind of interactive game.
-
-- Anything you want! Got some new Unity technique you want to try? Use this as an excuse! Don’t feel limited by the sample scene, feel free to create a new scene and leverage your cursor code in some novel way.
+- Anything you want! Is there some new Android library or API you want to try? Use this as an excuse. Feel free to add any new Activities to the app as needed.
 
 Feel free to use 3rd party code or assets for this part of the project, keeping in mind our assessment criteria (noted at the top of the README.)
 
