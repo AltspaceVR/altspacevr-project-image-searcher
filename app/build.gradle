@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0"
@@ -12,10 +15,10 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("C:/Users/tejus/Documents/Repos/UnityClient/Assets/AndroidWebView/Dependencies/altspacevr-client.keystore")
-            storePassword "vpiu+qTp9uiXq7J>"
-            keyAlias "altvrclient"
-            keyPassword "vpiu+qTp9uiXq7J>"
+            storeFile file(properties.getProperty("signing.storeFile"))
+            storePassword properties.getProperty("signing.storePassword")
+            keyAlias properties.getProperty("signing.keyAlias")
+            keyPassword properties.getProperty("signing.keyPassword")
         }
     }
     buildTypes {
