@@ -5,7 +5,7 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0"
+    buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "testsample.altvr.com.testsample"
         minSdkVersion 21
