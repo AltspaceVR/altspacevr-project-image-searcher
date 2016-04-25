@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Finish the implementation of an Android app that can be used to search for and save images from the Pixabay image API.
+Finish the implementation of an Android app that can be used to search for and save images from the [Pixabay image API][pixabay].
 
 ## Goals
 
@@ -22,7 +22,7 @@ To work on the project:
 
 - Fork and clone the repo.
 
-- Open up the project with Android Studio. You can build the project via Gradle.
+- Open up the project with Android Studio. You can build the project using [Gradle][gradle].
 
 # Part 1
 
@@ -34,7 +34,7 @@ The example project should provide a good foundation for the app. The places in 
 
 For Part 1a, you will need to implement the necessary functionality to fetch images info from the API, hand it off to the PhotosFragment, generate the image for rendering, and implement the adapter for the RecyclerView. The methods you'll need to implement are:
 
-* `ApiService.getDefaultPhotos` and `ApiService.searchPhotos` - These methods should call the relevant Pixabay APIs to fetch and search for images, and post the results to the EventBus. We've provided a Retrofit service you can use, or you can use your HTTP library of choice.
+* `ApiService.getDefaultPhotos` and `ApiService.searchPhotos` - These methods should call the relevant Pixabay APIs to fetch and search for images, and post the results to the EventBus. We've provided a [Retrofit][retrofit] service you can use, or you can use your HTTP library of choice.
 
 * `PhotosFragment.onEvent` (both overloads) - These methods should receive the events on the event bus, update the fragment properly, and notify the list that the data has changed.
 
@@ -72,10 +72,12 @@ In your repo, you should clobber this README file with your own describing your 
 
 **Please be sure to commit a built APK to your repo**, just in case we have trouble getting your project to build.
 
-E-mail us a link to your Github repo to `projects@altvr.com`. Please include your contact information, and if you haven't submitted it to us already, your resume and cover letter. 
+E-mail us a link to your Github repo to [projects@altvr.com](mailto:projects@altvr.com). Please include your contact information, and if you haven't submitted it to us already, your resume and cover letter.
 
 We hope you have fun working on the project, and we can't wait to see what you come up with!
-    
+
 [The Altspace Team](http://altvr.com/team/)
 
-
+[gradle]: http://gradle.org/
+[retrofit]: http://square.github.io/retrofit/
+[pixabay]:https://pixabay.com/api/docs/

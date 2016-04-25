@@ -21,12 +21,9 @@ import java.util.List;
 
 import testsample.altvr.com.testsample.vo.PhotoVo;
 
-
 /**
  * Created by tejus on 4/14/2016.
  */
-
-
 public class DatabaseUtil extends SQLiteOpenHelper {
     private LogUtil log = new LogUtil(DatabaseUtil.class);
 
@@ -67,4 +64,3 @@ public class DatabaseUtil extends SQLiteOpenHelper {
      */
 
 }
-

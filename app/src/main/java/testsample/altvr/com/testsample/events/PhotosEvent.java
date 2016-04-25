@@ -8,4 +8,3 @@ public class PhotosEvent {
     public List<PhotoVo> data;
     public PhotosEvent(List<PhotoVo> data) { this.data = data; }
 }
-

@@ -7,7 +7,6 @@ import com.squareup.picasso.Transformation;
 /**
  * Created by Tejus Kudari on 4/13/2016.
  */
-
 public class ItemImageTransformation implements Transformation {
     private static final String KEY = "itemImageTransformationKey";
 
@@ -36,11 +35,7 @@ public class ItemImageTransformation implements Transformation {
         return KEY + mImageViewWidth;
     }
 
-
     private int getNewHeightFromAspectRatio(int newWidth, int originalHeight, int originalWidth) {
         return (int) (newWidth * ((float) originalHeight / originalWidth));
     }
-
-
 }
-

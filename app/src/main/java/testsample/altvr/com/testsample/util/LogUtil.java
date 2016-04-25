@@ -31,13 +31,13 @@ public class LogUtil {
     }
 
     public void d(String... log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.d(TAG, TextUtils.join(" : ", log));
         }
     }
 
     public void w(String... log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.w(TAG, TextUtils.join(" : ", log));
         }
     }
@@ -49,40 +49,38 @@ public class LogUtil {
     }
 
     public void e(Throwable tr, String... log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.e(TAG,TextUtils.join(" : ", log), tr);
         }
     }
 
     public static void log(String log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.d(sTAG,log);
         }
     }
 
     public static void logW(String log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.w(sTAG,log);
         }
     }
 
     public static void logW(String log, Throwable tr){
-        if (DEBUG){
+        if (DEBUG) {
             Log.w(sTAG, log, tr);
         }
     }
 
     public static void logE(String log){
-        if (DEBUG){
+        if (DEBUG) {
             Log.e(sTAG,log);
         }
     }
 
     public static void logE(String log, Throwable tr){
-        if (DEBUG){
+        if (DEBUG) {
             Log.e(sTAG,log,tr);
         }
     }
 }
-
-

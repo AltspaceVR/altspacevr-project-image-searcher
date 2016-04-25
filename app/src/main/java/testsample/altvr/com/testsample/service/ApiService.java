@@ -32,5 +32,4 @@ public class ApiService {
      * We provide a Retrofit API adapter here you can use, or you can roll your own using the HTTP library
      * of your choice.
      */
-
 }
