@@ -37,9 +37,6 @@ public class ItemsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     private Context mContext;
     private DatabaseUtil mDbUtil;
 
-
-
-
     public interface ItemListener {
         void itemClicked(ItemViewHolder rowView, int position);
     }
@@ -79,11 +76,9 @@ public class ItemsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         return TYPE_ITEM;
     }
 
-
     private boolean isImageSizeGiven() {
         return mImageWidth != INVALID_DIMEN;
     }
-
 
     @Override
     public int getItemCount() {
@@ -102,9 +97,4 @@ public class ItemsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             saveText = (TextView) itemView.findViewById(R.id.saveText);
         }
     }
-
-
 }
-
-
-

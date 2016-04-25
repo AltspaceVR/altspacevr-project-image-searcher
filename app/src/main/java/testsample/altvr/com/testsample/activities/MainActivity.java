@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
     private void displayFragment(Fragment fragment, int title) {
         setTitle(title);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, fragment).commit();

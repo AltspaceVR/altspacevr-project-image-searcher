@@ -24,5 +24,4 @@ public class PhotoVo {
     public int user_id;
     public String user;
     public String userImageURL;
-
 }
