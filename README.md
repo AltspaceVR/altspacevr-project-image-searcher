@@ -76,7 +76,7 @@ E-mail us a link to your Github repo to [projects@altvr.com](mailto:projects@alt
 
 We hope you have fun working on the project, and we can't wait to see what you come up with!
 
-[The Altspace Team](http://altvr.com/team/)
+[The AltspaceVR Team](http://altvr.com/team/)
 
 [gradle]: http://gradle.org/
 [retrofit]: http://square.github.io/retrofit/
